@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <title>Apply For a Job At ProDataCollectors</title>
+
+<h4><a href="{{ url_for('home') }}">Home</a></h4>
+
+
+
+<style>
+.name{
+    width: 60%;
+    
+}
+.github{
+    width: 60%;
+    
+}
+.age{
+    width: 60%;
+    
+}
+.location{
+    width: 60%;
+    
+}
+.email{
+    width: 60%;
+    
+}
+.discord{
+    width: 60%;
+    
+}
+.explain{
+    width: 60%;
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+input[type=text] {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+</style>
+
+
+<center>
+    <h1>Application</h1>
+        <h4>If you are interesting in a paid job/internship at ProDataCollectors fill the application below</h4>
+        <form action="/application" method="POST">
+            <input type = "text" class="name" name="name" placeholder="First And Last Name" />
+            <br><br>
+            <input type = "text" class="github" name="github" placeholder="GitHub Profile Username" />
+            <br><br>
+            <input type = "text" name="age" class="age" placeholder="Age" />
+            <br><br>
+            <input type = "text" name="location" class="location" placeholder="State/Country" />
+            <br><br>
+            <input type = "text" name="email"  class="email" placeholder="Email" />
+            <br><br>
+            <input type="text" name="explain" class="explain" placeholder="Tell us in the most specific way why you would like to work for us"/>
+            <br><br>
+            <input type="submit" class="button" value="Submit" />
+        </form>
+    </center>
+</html>
